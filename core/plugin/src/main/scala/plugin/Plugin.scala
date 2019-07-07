@@ -12,6 +12,9 @@ object MyPlugin extends AutoPlugin {
 
   override lazy val projectSettings = Seq(
     myPluginKey := myplib.MyPLib.MyConst,
-    libraryDependencies += "gzm0s-hackeries" %% "lib" % "0.1.0-SNAPSHOT",
+    libraryDependencies ++= Seq(
+        "gzm0s-hackeries" %% "lib" % "0.1.0-SNAPSHOT",
+        "gzm0s-hackeries" %% "latelib" % "0.1.0-SNAPSHOT"
+    )
   )
 }
