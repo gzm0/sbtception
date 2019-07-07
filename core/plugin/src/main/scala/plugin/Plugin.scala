@@ -11,7 +11,7 @@ object MyPlugin extends AutoPlugin {
   import autoImport._
 
   override lazy val projectSettings = Seq(
-    myPluginKey := "the value!",
+    myPluginKey := myplib.MyPLib.MyConst,
     libraryDependencies += "gzm0s-hackeries" %% "lib" % "0.1.0-SNAPSHOT",
   )
 }
